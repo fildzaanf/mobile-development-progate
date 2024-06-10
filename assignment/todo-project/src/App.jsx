@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Todos from './components/Todos';
 
 function App(){
   const [todos, setTodos] = useState([
@@ -29,6 +30,7 @@ function App(){
           {todo.title}
         </p>
       })}
+      <Todos todos={todos} />
     </div>
   )
 }
